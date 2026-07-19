@@ -31,7 +31,7 @@ body {
 }
 
 .site-header {
-    background: #e9d8c3;
+    background: #A56F63;
     padding: 2% 6.75% 1.5% 3.35%;
     align-items: center;
 }
@@ -151,7 +151,7 @@ nav a:hover {
     margin: 0;
     font-family: "Montserrat", sans-serif;
     font-style: normal;
-    font-size: clamp(1.2rem, 2.2vw, 2.2rem);
+    font-size: 1.5rem;
     line-height: 1.13;
     font-weight: 500;
     transition: opacity .25s ease;
@@ -501,7 +501,27 @@ box-shadow:
         min-height: 260px;
         overflow: hidden;
     }
+    .panel--designer{
+        clip-path: inset(0 45% 0 0);
+        opacity: 100%;
+        background-color: #fff;
+        animation: none;
+    }
+    .designer-content {
+    opacity: 1;
+}
 
+.developer-content {
+    opacity: 100%;
+}
+
+    .panel--developer{
+        clip-path: inset(0 0 0 55%);
+        opacity: 100%;
+        background-color: #000;
+        animation: none;
+    }
+    
     /* TITLES */
     .panel h1 {
         font-size: 1.5rem;
@@ -517,6 +537,9 @@ box-shadow:
         top: 40%;
         left: auto;
         right: 4%;
+    }
+    .intro{
+        display:none;
     }
 
     /* PORTRAIT */
@@ -545,24 +568,6 @@ box-shadow:
                 font-size: 1.5rem;
         left: 8%;
         bottom: 12%;
-    }
-
-    /* INTRO */
-    .intro {
-        font-size: .75rem;
-        line-height: 1.4;
-    }
-
-    .panel--designer .intro {
-        left: 6%;
-        bottom: 6%;
-    }
-
-    .panel--developer .intro {
-        right: 6%;
-        top: auto;
-        bottom: 6%;
-        text-align: right;
     }
 
     .hint {
