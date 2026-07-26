@@ -1,0 +1,353 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#333;
+}
+.myself{
+
+    margin:auto;
+    min-height: 520px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color: black;
+
+    padding:15px 100px 0;
+}
+
+/* text */
+
+.myself-text{
+
+    max-width:520px;
+    margin-left:20px;
+    
+}
+
+.myself-text h1{
+
+    font-size:90px;
+    font-weight:800;
+    color:white;
+    margin-bottom:25px;
+}
+
+.myself-text h3{
+
+    font-size:28px;
+    font-weight:300;
+    color:white;
+    line-height:1.4;
+
+    margin-bottom:45px;
+}
+
+.myself-text p{
+
+    font-size:16px;
+    color:white;
+    line-height:1.8;
+}
+
+/* image */
+
+.myself-image{
+    display:flex;
+    justify-content:center;
+    flex: 1;
+}
+
+.myself-image img{
+    width: 100%;
+    max-width: 360px;   /* Adjust as needed */
+    height: auto;
+    object-fit: contain;
+    padding-right: 50px;
+}/*=========================
+    Skills Section
+==========================*/
+
+.skills-section{
+
+    width:100%;
+    min-height:50vh;
+
+    display:flex;
+    justify-content:centre;
+    align-items:center;
+
+    padding:30px 10%;
+
+    background:#fff;
+  flex-wrap: wrap;
+
+  /* 2. Add shadows above and below the section to make it "pop" off the page */
+  box-shadow: 
+    0px -15px 15px -15px rgba(0, 0, 0, 0.15), /* Top shadow */
+    0px 15px 15px -15px rgba(0, 0, 0, 0.15);  /* Bottom shadow */
+
+
+  /* 4. Add spacing so it doesn't collide with other elements */
+  padding: 3rem 2rem; /* Creates space inside the section */
+}
+.designer{
+    padding-left: 8rem;
+}
+
+.skill{
+
+    width:28%;
+}
+
+.skill h2{
+
+    font-size:2rem;
+    font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+    margin-bottom:15px;
+    color:#333;
+}
+
+.skill ul{
+
+    list-style:none;
+    
+    padding-left: 0px;
+}
+
+.skill li{
+
+    font-size:1.1rem;
+    color:#444;
+    margin-bottom:5px;
+    font-family: "Elms Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+/* Container sizing */
+.portfolio-chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px; /* Adjust based on your layout */
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* SVG Base */
+.pie-chart {
+  overflow: visible; /* Prevents shadow clipping */
+}
+
+/* Apply shadow and transitions to both slices */
+.slice path {
+  filter: url(#drop-shadow);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+}
+
+/* Create the "Exploded" separation for the Coder slice */
+.coder-slice {
+  transform: translate(14px, 6px);
+}
+
+/* Optional: Interactive hover effects for a portfolio */
+.designer-slice:hover path {
+  transform: translate(-4px, -4px);
+}
+
+.coder-slice:hover path {
+  transform: translate(4px, 4px); /* Pushes out slightly further on hover */
+}
+
+/* Typography matching the image */
+.chart-label {
+  fill: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.5px;
+  pointer-events: none; /* Ensures hover effects trigger over the whole slice */
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3); /* Helps text pop against gradients */
+}
+/* Main Section Wrapper */
+.random-facts-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: black;
+  box-sizing: border-box;
+  padding: 4rem 0rem 4rem 0rem;;
+  /* Restricts the maximum height to less than the full screen */
+  max-height: 100vh; 
+  overflow-y: auto; 
+}
+
+/* Flexbox Container */
+.facts-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1100px; /* Constrains the maximum width for wide screens */
+  width: 100%;
+  gap: 5rem; /* Creates the gap between the image and the text */
+}
+
+/* Image Styling */
+.facts-image-wrapper {
+  flex: 1; /* Takes up half the available space */
+  padding: 10px 10px 10px 90px;
+  display: flex;
+  justify-content: left;
+}
+
+.facts-image {
+  width: 100%;
+    max-width: 300px;   /* Adjust as needed */
+    
+    height: auto;
+  object-fit: contain;
+}
+
+/* Text & Typography Styling */
+.facts-content {
+  flex: 1; /* Takes up the other half */
+  
+  padding-right: 80px;
+}
+
+.facts-heading {
+  font-size: 2.5rem;
+  font-weight: 500; /* Recreates the thin, elegant font weight from the image */
+  color: white;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.facts-list {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.facts-list li {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: white;
+  line-height: 2.2; /* Adds the tall spacing between lines */
+  
+}
+
+/* Styling for the embedded link */
+.facts-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px; /* Drops the underline down slightly */
+}
+
+.facts-link:hover {
+  color: #333333;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* @media(max-width:1100px){
+
+    .myself{
+
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .myself-image{
+
+        justify-content:center;
+        margin-top:50px;
+    }
+
+    .myself{
+
+        padding:60px 30px;
+    }
+
+} */
+
+
+@media(max-width:768px){
+    .skill{
+        width: 100%;
+    }
+    .skill{
+        text-align: center;
+        padding:0;
+    }
+
+    .myself{
+        padding: 15px 15px;
+        flex-wrap: wrap;
+    }
+    .myself-image img{
+        padding: 10px;
+    }
+
+    .myself-text h1{
+
+        font-size:70px;
+        text-align: center;
+    }
+
+    .myself-text h3{
+
+        font-size:24px;
+    }
+
+    .myself-text p{
+
+        font-size:18px;
+    }
+    .facts-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .facts-image-wrapper {
+    justify-content: center;
+    padding: 0 0 0 0;
+  }
+
+  /* Removes the height restriction on mobile so content doesn't get cut off if it stacks tall */
+  .random-facts-section {
+    max-height: none; 
+    padding: 2rem 1rem 4.5rem 1rem
+  }
+  .facts-content{
+    padding: 0 0 0 0;
+    text-align: center;
+  }
+  .facts-heading{
+            font-weight: 350;
+        margin-bottom: 1rem;
+        margin-top: 2rem;
+  }
+
+  .facts-list li {
+    font-size: .9rem;
+    
+    line-height: 2.5;
+  }
+}

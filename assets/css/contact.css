@@ -1,0 +1,239 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#fff;
+    color:#333;
+}/* ===========================
+        CONTACT SECTION
+=========================== */
+
+.contact-section{
+
+    width:100%;
+    padding:120px 7%;
+    background:#fff;
+
+}
+
+.contact-heading{
+
+    max-width:1000px;
+    margin-bottom:90px;
+
+}
+
+.contact-heading h1{
+
+    font-size:clamp(4rem,10vw,7rem);
+    font-weight:800;
+    line-height:1;
+    color:#000;
+    margin-bottom:25px;
+
+}
+
+.contact-heading p{
+
+    font-size:clamp(1.3rem,2vw,2.2rem);
+    line-height:1.35;
+    color:#111;
+    font-weight:400;
+
+}
+
+/* GRID */
+
+.contact-grid{
+
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:60px;
+    align-items:center;
+
+}
+
+.contact-card{
+
+    text-decoration:none;
+    color:#111;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+/* ICON */
+
+.icon{
+
+    width:90px;
+    height:90px;
+
+    border-radius:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2.5rem;
+
+    color:white;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+
+}
+
+.phone{
+
+    background:#2f9ae5;
+
+}
+
+.email{
+
+    background:#EA4335;
+
+}
+
+.linkedin{
+
+    background:#0077b5;
+
+}
+
+.whatsapp{
+
+    background:#25D366;
+
+}
+
+.contact-card:hover .icon{
+
+    transform:scale(1.12) rotate(-8deg);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.18);
+
+}
+
+.contact-card h4{
+
+    margin-top:22px;
+    font-size:1.5rem;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.contact-card:hover h4{
+
+    letter-spacing:1px;
+
+}
+
+
+/* ===========================
+        TABLET
+=========================== */
+
+@media(max-width:991px){
+
+.contact-section{
+
+    padding:100px 5%;
+    text-align: center;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:repeat(2,1fr);
+    gap:50px;
+
+}
+
+.contact-heading{
+
+    margin-bottom:70px;
+
+}
+
+}
+
+
+/* ===========================
+        MOBILE
+=========================== */
+
+@media(max-width:576px){
+
+.contact-section{
+
+    padding:80px 20px;
+    text-align: center;
+
+}
+
+.contact-heading{
+
+    margin-bottom:60px;
+
+}
+
+.contact-heading p{
+
+    font-size:1.35rem;
+
+}
+
+.contact-grid{
+
+    grid-template-columns:repeat(2,1fr);
+    gap:35px;
+
+}
+
+.icon{
+
+    width:75px;
+    height:75px;
+    font-size:2rem;
+
+}
+
+.contact-card h4{
+
+    font-size:1.2rem;
+
+}
+
+}
+
+
+/* Extra Small */
+
+@media(max-width:420px){
+
+.contact-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

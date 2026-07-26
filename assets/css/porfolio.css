@@ -1,0 +1,204 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.portfolio-myself{
+
+    height:100vh;
+    display:flex;
+    padding: 40px 20px;
+}
+
+/* LEFT */
+
+.gallery{
+
+    width:50%;
+    display:flex;
+    gap:15px;
+    overflow:hidden;
+    padding:80px 80px 100px 80px;
+    position:relative;
+}
+
+.gallery::before,
+.gallery::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    width:100%;
+    height:120px;
+    z-index:10;
+    pointer-events:none;
+}
+
+.gallery::before{
+
+    top:0;
+    background:linear-gradient(to bottom,#000,transparent);
+}
+
+.gallery::after{
+
+    bottom:0;
+    background:linear-gradient(to top,#000,transparent);
+}
+.scroll-up{
+
+    animation:scrollUp 20s linear infinite;
+}
+
+.scroll-down{
+
+    animation:scrollDown 15s linear infinite;
+}
+
+.column{
+
+    width:50%;
+    display:flex;
+    flex-direction:column;
+     align-items: center; 
+    gap:20px;
+}
+
+.image{
+
+    width:85%;
+    flex-shrink:0;
+}
+
+.image img{
+
+    width:80%;
+    display:block;
+    border-radius:10px;
+    border-radius:12px;
+    transition:0.4s;
+}
+.image:hover img{
+
+    transform:scale(1.04);
+}
+
+/* RIGHT */
+
+.myself-content{
+
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:right;
+    padding:80px;
+}
+
+.myself-content h1{
+
+    font-size:7rem;
+    font-weight:700;
+    margin-bottom:60px;
+}
+
+.myself-content h2{
+
+    font-size:2rem;
+    font-weight:400;
+    max-width:520px;
+    margin-bottom:20px;
+}
+
+.myself-content p{
+
+    font-size:1rem;
+    color:#cfcfcf;
+    max-width:520px;
+    line-height:1.7;
+    font-family: "Kodchasan", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+@keyframes scrollUp{
+
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-50%);
+    }
+
+}
+
+@keyframes scrollDown{
+
+    from{
+        transform:translateY(-50%);
+    }
+
+    to{
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width:768px){
+
+    .portfolio-myself{
+        flex-direction:column;
+    }
+
+    .gallery{
+        width:100%;
+        height:520px;
+        padding:15px;
+        gap:12px;
+    }
+
+    .column{
+        gap:12px;
+    }
+
+    .image img{
+        border-radius:10px;
+    }
+
+    .myself-content{
+        width:100%;
+        padding:60px 25px;
+        text-align:center;
+    }
+
+    .myself-content h1{
+        font-size:3.5rem;
+        margin-bottom:25px;
+    }
+
+    .myself-content h2{
+        font-size:1.6rem;
+        margin-bottom:20px;
+    }
+
+    .myself-content p{
+        font-size:1rem;
+        line-height:1.8;
+    }
+
+}
