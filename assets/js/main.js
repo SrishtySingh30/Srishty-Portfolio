@@ -126,3 +126,8 @@ columns.forEach(column => {
     });
 
 });
+const gallery = document.querySelector(".gallery");
+
+gallery.addEventListener("click", () => {
+    window.open("https://www.behance.net/srishtysingh1", "_blank");
+});

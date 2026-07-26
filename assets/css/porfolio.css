@@ -29,6 +29,7 @@ body{
     overflow:hidden;
     padding:80px 80px 100px 80px;
     position:relative;
+        cursor:pointer;
 }
 
 .gallery::before,
@@ -152,6 +153,195 @@ body{
     to{
         transform:translateY(0);
     }
+
+}
+/*==============================
+        SKILLS SECTION
+==============================*/
+
+.skills-section{
+
+    width:100%;
+    padding:50px 7%;
+    background:#fff;
+
+}
+
+.skills-heading{
+
+    max-width:900px;
+    margin-bottom:50px;
+
+}
+
+.skills-heading h1{
+
+    font-size:clamp(4rem,7vw,7rem);
+    font-weight:800;
+    line-height:1;
+    color:#000;
+    margin-bottom:25px;
+
+}
+
+.skills-heading p{
+
+    font-size:clamp(1.3rem,2vw,2.2rem);
+    color:#111;
+    line-height:1.4;
+
+}
+
+/*==============================
+            GRID
+==============================*/
+
+.skills-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px 60px;
+
+}
+
+.skill-card{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    transition:.35s;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.skill-card img{
+
+    width:95px;
+    height:95px;
+
+    transition:.35s;
+
+}
+
+.skill-card i{
+
+    font-size:95px;
+
+    transition:.35s;
+
+}
+
+.skill-card:hover img,
+.skill-card:hover i{
+
+    transform:scale(1.12);
+
+}
+
+.skill-card h4{
+
+    margin-top:18px;
+
+    font-size:1.6rem;
+    font-weight:500;
+
+    color:#222;
+
+    transition:.3s;
+
+}
+
+.skill-card:hover h4{
+
+    letter-spacing:.8px;
+
+}
+
+/*==============================
+        TABLET
+==============================*/
+
+@media(max-width:992px){
+
+.skills-section{
+
+    padding:100px 5%;
+
+}
+
+.skills-grid{
+
+    grid-template-columns:repeat(2,1fr);
+    gap:60px;
+
+}
+
+}
+
+/*==============================
+        MOBILE
+==============================*/
+
+@media(max-width:576px){
+
+.skills-section{
+
+    padding:80px 20px;
+
+}
+
+.skills-heading{
+
+    margin-bottom:60px;
+
+}
+
+.skills-grid{
+
+    grid-template-columns:repeat(2,1fr);
+    gap:45px 20px;
+
+}
+
+.skill-card img{
+
+    width:75px;
+    height:75px;
+
+}
+
+.skill-card i{
+
+    font-size:75px;
+
+}
+
+.skill-card h4{
+
+    font-size:1.1rem;
+    text-align:center;
+
+}
+
+}
+
+/*==============================
+      EXTRA SMALL
+==============================*/
+
+@media(max-width:400px){
+
+.skills-grid{
+
+    grid-template-columns:1fr;
+
+}
 
 }
 
