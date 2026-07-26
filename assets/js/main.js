@@ -59,11 +59,7 @@ function animate() {
   hero.classList.toggle("developer-active", displayedSplit < 4);
   requestAnimationFrame(animate);
 }
-<<<<<<< HEAD
 if(hero){
-=======
-
->>>>>>> e52b8b00ca4cbc9bba18b653d3b0e4c85c9fd9dc
 hero.addEventListener("pointermove", (event) => setTarget(event.clientX));
 hero.addEventListener("pointerleave", () => {
   targetSplit = 55;
@@ -73,10 +69,7 @@ hero.addEventListener(
   (event) => setTarget(event.touches[0].clientX),
   { passive: true },
 );
-<<<<<<< HEAD
 
-=======
->>>>>>> e52b8b00ca4cbc9bba18b653d3b0e4c85c9fd9dc
 // The entry animations hold their final frame; release that frame so the
 // pointer-controlled clipping takes over as soon as the intro has finished.
 document.querySelectorAll(".panel").forEach((panel) => {
@@ -89,10 +82,7 @@ document.querySelectorAll(".panel").forEach((panel) => {
   );
 });
 animate();
-<<<<<<< HEAD
 }
-=======
->>>>>>> e52b8b00ca4cbc9bba18b653d3b0e4c85c9fd9dc
 
 document.getElementById("backToTop").addEventListener("click", () => {
   window.scrollTo({
@@ -122,7 +112,6 @@ button.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
-<<<<<<< HEAD
 
 const columns = document.querySelectorAll(".column");
 
@@ -137,5 +126,3 @@ columns.forEach(column => {
     });
 
 });
-=======
->>>>>>> e52b8b00ca4cbc9bba18b653d3b0e4c85c9fd9dc
