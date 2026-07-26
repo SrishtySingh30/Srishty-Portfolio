@@ -31,6 +31,7 @@ body {
 }
 
 .site-header {
+<<<<<<< HEAD
     background: black;
     padding: 0.5% 6.75% 0.5% 3.35%;
     align-items: center;
@@ -51,12 +52,27 @@ body {
 }
 .nav-item a{
     color: white;
+=======
+    background: #A56F63;
+    padding: 2% 6.75% 1.5% 3.35%;
+    align-items: center;
+}
+.brand {
+    color: inherit;
+    text-decoration: none;
+    font-family: "DM Mono", monospace;
+    font-size: clamp(1rem, 1.8vw, 1.7rem);
+    text-shadow: 1px 1px 0 #555;
+>>>>>>> e52b8b00ca4cbc9bba18b653d3b0e4c85c9fd9dc
 }
 nav a {
     color: inherit;
     text-decoration: none;
     font-weight: 500;
+<<<<<<< HEAD
     color: white;
+=======
+>>>>>>> e52b8b00ca4cbc9bba18b653d3b0e4c85c9fd9dc
 }
 
 nav a:hover {
@@ -652,4 +668,8 @@ box-shadow:
         animation-delay: 0ms !important;
         transition-duration: .10ms !important;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> e52b8b00ca4cbc9bba18b653d3b0e4c85c9fd9dc
